@@ -1,13 +1,15 @@
 export default {
+  title: 'Spencer Schoeben',
+  description: 'digital architect',
+  canonical: 'https://netspencer.com/',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://www.url.ie/',
-    site_name: 'SiteName'
+    url: 'https://netspencer.com/',
+    site_name: 'Spencer Schoeben'
   },
   twitter: {
-    handle: '@handle',
-    site: '@site',
+    handle: '@netspencer',
     cardType: 'summary_large_image'
   }
 }
