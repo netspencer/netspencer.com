@@ -6,7 +6,14 @@ import Link from 'next/link'
 const Page: NextPage = () => (
   <>
     <header
-      className={classNames('p-8', 'flex', 'justify-between', 'items-baseline')}
+      className={classNames(
+        'p-8',
+        'flex',
+        'justify-between',
+        'items-baseline',
+        'sticky',
+        'top-0'
+      )}
     >
       <Link href="/">
         <a>
@@ -15,7 +22,7 @@ const Page: NextPage = () => (
               'text-4xl',
               'font-bold',
               'font-sans',
-              'text-gray-800',
+              'text-gray-300',
               'hover:opacity-75'
             )}
           >
@@ -29,7 +36,7 @@ const Page: NextPage = () => (
         href="https://github.com/netspencer/netspencer.com"
       >
         <img
-          src="/static/github.png"
+          src="/static/github-white.png"
           alt="Github"
           className={classNames('w-8')}
         />
@@ -57,8 +64,9 @@ const Page: NextPage = () => (
           className={classNames(
             'font-serif',
             'mb-8',
-            'text-gray-800',
-            'text-xl'
+            'text-gray-300',
+            'text-xl',
+            'leading-relaxed'
           )}
         >
           My name is <b>Spencer Schoeben</b>. I am a product guy. I've been
@@ -71,8 +79,9 @@ const Page: NextPage = () => (
           className={classNames(
             'font-serif',
             'mb-8',
-            'text-gray-800',
-            'text-xl'
+            'text-gray-300',
+            'text-xl',
+            'leading-relaxed'
           )}
         >
           I am passionate about simplistic user experiences and using technology
@@ -82,8 +91,9 @@ const Page: NextPage = () => (
           className={classNames(
             'font-serif',
             'mb-8',
-            'text-gray-800',
-            'text-xl'
+            'text-gray-300',
+            'text-xl',
+            'leading-relaxed'
           )}
         >
           I am a designer who writes code, a developer who crafts pixels. I
@@ -94,8 +104,9 @@ const Page: NextPage = () => (
           className={classNames(
             'font-serif',
             'mb-8',
-            'text-gray-800',
-            'text-xl'
+            'text-gray-300',
+            'text-xl',
+            'leading-relaxed'
           )}
         >
           Trying to make the world a better place in my own, small way.
