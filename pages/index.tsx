@@ -51,13 +51,12 @@ const Page: NextPage = () => (
         'flex-wrap'
       )}
     >
-      <aside
+      <main
         className={classNames(
           'w-full',
           'md:w-1/2',
           'lg:max-w-md',
-          'flex-grow-0',
-          'pr-16'
+          'flex-grow-0'
         )}
       >
         <p
@@ -111,9 +110,6 @@ const Page: NextPage = () => (
         >
           Trying to make the world a better place in my own, small way.
         </p>
-      </aside>
-      <main className={classNames('flex-grow')}>
-        {/* <h2>coming soon</h2> */}
       </main>
     </div>
   </>
