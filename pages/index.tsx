@@ -91,8 +91,23 @@ const Page: NextPage = () => (
           >
             Jumpstart
           </a>
-          . Previously, served as CTO of a digital publishing company.
-          Co-founded Integral Studio prior to that.
+          . Previously, served as CTO of a{' '}
+          <a
+            className={classNames('font-bold', 'hover:underline')}
+            target="_blank"
+            href="https://magma.sh"
+          >
+            digital publishing company
+          </a>
+          . Co-founded{' '}
+          <a
+            className={classNames('font-bold', 'hover:underline')}
+            target="_blank"
+            href="https://integral.studio"
+          >
+            Integral Studio
+          </a>{' '}
+          prior to that.
         </p>
         <p
           className={classNames(
