@@ -83,6 +83,26 @@ const Page: NextPage = () => (
             'leading-relaxed'
           )}
         >
+          Currently leading iOS at{' '}
+          <a
+            className={classNames('font-bold', 'hover:underline')}
+            target="_blank"
+            href="https://jumpstart.me"
+          >
+            Jumpstart
+          </a>
+          . Previously, served as CTO of a digital publishing company.
+          Co-founded Integral Studio prior to that.
+        </p>
+        <p
+          className={classNames(
+            'font-serif',
+            'mb-8',
+            'text-gray-300',
+            'text-xl',
+            'leading-relaxed'
+          )}
+        >
           I am passionate about simplistic user experiences and using technology
           to create sanity as opposed to chaos.
         </p>
