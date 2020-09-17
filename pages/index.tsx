@@ -95,7 +95,7 @@ const Page: NextPage = () => (
           <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
-            href="https://magma.sh"
+            href="https://magmanow.com"
           >
             digital publishing company
           </a>
