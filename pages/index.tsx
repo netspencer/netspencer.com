@@ -87,7 +87,7 @@ const Page: NextPage = () => (
           <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
-            href="https://canvas.me"
+            href="https://canvas.com"
           >
             Canvas
           </a>
