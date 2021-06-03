@@ -83,13 +83,13 @@ const Page: NextPage = () => (
             'leading-relaxed'
           )}
         >
-          Currently leading iOS at{' '}
+          Currently building software at{' '}
           <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
-            href="https://jumpstart.me"
+            href="https://canvas.me"
           >
-            Jumpstart
+            Canvas
           </a>
           . Previously, served as CTO of a{' '}
           <a
