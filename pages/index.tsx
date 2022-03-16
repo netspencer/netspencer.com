@@ -83,22 +83,26 @@ const Page: NextPage = () => (
             'leading-relaxed'
           )}
         >
-          Currently building software at{' '}
+          Currently building tools for founders at{' '}
+          <a
+            className={classNames('font-bold', 'hover:underline')}
+            target="_blank"
+            href="https://partyround.com"
+          >
+            Party Round
+          </a>
+          . Previously, wrote software at {' '}
           <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
             href="https://canvas.com"
           >
-            Canvas
-          </a>
-          . Previously, served as CTO of a{' '}
-          <a
+            Untapped/Canvas
+          </a> and <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
             href="https://magmanow.com"
-          >
-            digital publishing company
-          </a>
+          >Magma</a>
           . Co-founded{' '}
           <a
             className={classNames('font-bold', 'hover:underline')}
