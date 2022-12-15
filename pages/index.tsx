@@ -87,9 +87,9 @@ const Page: NextPage = () => (
           <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
-            href="https://partyround.com"
+            href="https://capital.xyz"
           >
-            Party Round
+            Capital
           </a>
           . Previously, wrote software at {' '}
           <a
