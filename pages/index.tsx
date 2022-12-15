@@ -95,9 +95,9 @@ const Page: NextPage = () => (
           <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
-            href="https://canvas.com"
+            href="https://untapped.io"
           >
-            Untapped/Canvas
+            Untapped
           </a> and <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
