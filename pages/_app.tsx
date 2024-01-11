@@ -30,6 +30,10 @@ const Analytics: FunctionComponent<{ id: string }> = ({ id }) => (
     `,
       }}
     />
+    <script src="https://www.delphi.ai/chatWidgetBundle.js"
+	id="chat-widget" 
+	data-secret1="a3a61594-235b-4c32-a544-2d1f362cd44e">
+</script>
   </Head>
 )
 
