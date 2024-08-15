@@ -153,8 +153,8 @@ const Page: NextPage = () => (
     </div>
 
         <script dangerouslySetInnerHTML={{__html: `  window.delphi = {
-    config: "8bbf71fd-d47b-4705-a44f-28773432b8e2", // embed id
-    type: "page" // or "bubble"
+    config: "8bbf71fd-d47b-4705-a44f-28773432b8e2",
+    type: "bubble"
   };`}} />
 
 
