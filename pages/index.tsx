@@ -83,7 +83,16 @@ const Page: NextPage = () => (
             'leading-relaxed'
           )}
         >
-          Currently building tools for founders at{' '}
+          Currently, founding engineer at{' '}
+          <a
+            className={classNames('font-bold', 'hover:underline')}
+            target="_blank"
+            href="https://delphi.ai"
+          >
+            Delphi
+          </a>
+          , allowing the brightest minds to scale their time, infinitely.
+          Previously at{' '}
           <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
@@ -91,18 +100,22 @@ const Page: NextPage = () => (
           >
             Capital
           </a>
-          . Previously, wrote software at {' '}
+          ,{' '}
           <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
             href="https://untapped.io"
           >
             Untapped
-          </a> and <a
+          </a>
+          , and{' '}
+          <a
             className={classNames('font-bold', 'hover:underline')}
             target="_blank"
             href="https://magmanow.com"
-          >Magma</a>
+          >
+            Magma
+          </a>
           . Co-founded{' '}
           <a
             className={classNames('font-bold', 'hover:underline')}
@@ -111,7 +124,7 @@ const Page: NextPage = () => (
           >
             Integral Studio
           </a>{' '}
-          prior to that.
+          before that.
         </p>
         <p
           className={classNames(
@@ -152,15 +165,21 @@ const Page: NextPage = () => (
       </main>
     </div>
 
-        <script dangerouslySetInnerHTML={{__html: `  window.delphi = {
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `  window.delphi = {
     config: "8bbf71fd-d47b-4705-a44f-28773432b8e2",
     type: "bubble"
-  };`}} />
+  };`,
+      }}
+    />
 
-
-<script dangerouslySetInnerHTML={{__html: `!function(){var e=window,t=document,n=function(){if(!e.delphi||"page"!==e.delphi.type&&"bubble"!==e.delphi.type)throw new Error("Invalid or missing delphi type. Must be 'page' or 'bubble'.");var n=t.createElement("script");n.type="text/javascript",n.async=!0,n.defer=!0,n.src="page"===e.delphi.type?"https://embed.delphi.ai/bundle.js":"https://embed.delphi.ai/widget.js",e.delphi&&e.delphi.config&&n.setAttribute("data-config",e.delphi.config);var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(n,i)};"complete"===t.readyState?n():e.attachEvent?e.attachEvent("onload",n):e.addEventListener("load",n,!1)}();
-`}} />
-
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `!function(){var e=window,t=document,n=function(){if(!e.delphi||"page"!==e.delphi.type&&"bubble"!==e.delphi.type)throw new Error("Invalid or missing delphi type. Must be 'page' or 'bubble'.");var n=t.createElement("script");n.type="text/javascript",n.async=!0,n.defer=!0,n.src="page"===e.delphi.type?"https://embed.delphi.ai/bundle.js":"https://embed.delphi.ai/widget.js",e.delphi&&e.delphi.config&&n.setAttribute("data-config",e.delphi.config);var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(n,i)};"complete"===t.readyState?n():e.attachEvent?e.attachEvent("onload",n):e.addEventListener("load",n,!1)}();
+`,
+      }}
+    />
   </>
 )
 
