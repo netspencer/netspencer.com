@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>og</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+      }
+      body {
+        color: #ece9e1;
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+        background: #0b0b0a;
+        position: relative;
+      }
+      .aura {
+        position: absolute;
+        inset: -20%;
+        background:
+          radial-gradient(38% 42% at 14% 18%, rgba(183, 116, 42, 0.42), transparent 70%),
+          radial-gradient(36% 40% at 88% 86%, rgba(47, 95, 120, 0.38), transparent 70%);
+      }
+      .grain {
+        position: absolute;
+        inset: 0;
+        opacity: 0.07;
+        mix-blend-mode: screen;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      }
+      .frame {
+        position: relative;
+        z-index: 1;
+        height: 630px;
+        padding: 72px 84px 64px;
+        display: flex;
+        flex-direction: column;
+      }
+      .brand {
+        font-family: Newsreader, Georgia, serif;
+        font-style: italic;
+        font-size: 28px;
+        letter-spacing: -0.02em;
+        color: rgba(236, 233, 225, 0.72);
+      }
+      .name {
+        margin-top: auto;
+        font-family: Newsreader, Georgia, serif;
+        font-size: 92px;
+        line-height: 0.95;
+        letter-spacing: -0.03em;
+        font-weight: 400;
+      }
+      .lede {
+        margin-top: 28px;
+        font-family: Newsreader, Georgia, serif;
+        font-style: italic;
+        font-size: 32px;
+        line-height: 1.35;
+        color: #9a958a;
+        max-width: 18ch;
+      }
+      .foot {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #5d5952;
+        font-size: 18px;
+        letter-spacing: 0.02em;
+      }
+      .pin {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .pin svg {
+        width: 18px;
+        height: 18px;
+      }
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 99px;
+        background: #b7742a;
+        box-shadow: 0 0 0 5px rgba(183, 116, 42, 0.22);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="aura"></div>
+    <div class="grain"></div>
+    <div class="frame">
+      <div class="brand">netspencer</div>
+      <h1 class="name">Spencer Schoeben</h1>
+      <p class="lede">Founding &amp; staff software engineer at Delphi.</p>
+      <div class="foot">
+        <div class="pin">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 21s-6-5.4-6-11a6 6 0 1 1 12 0c0 5.6-6 11-6 11Z" />
+            <circle cx="12" cy="10" r="2.2" />
+          </svg>
+          Mill Valley, California
+        </div>
+        <div class="pin">
+          <span class="dot"></span>
+          netspencer.com
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
