@@ -154,6 +154,108 @@
     color: var(--color-ink);
   }
 
+  /* Location pin with a popover listing places lived. */
+  .place {
+    position: relative;
+    display: inline-block;
+    /* Later .rise sections animate filter/transform and form stacking contexts; lift the open popover above them. */
+    z-index: 20;
+  }
+  .place > summary {
+    @apply inline-flex cursor-pointer items-center gap-2 text-[0.9rem] text-mute select-none;
+    list-style: none;
+    transition: color 0.25s ease;
+  }
+  .place > summary::-webkit-details-marker {
+    display: none;
+  }
+  .place > summary:hover,
+  .place[open] > summary {
+    color: var(--color-ink);
+  }
+  .place > summary > span {
+    border-bottom: 1px dotted color-mix(in oklab, currentColor 45%, transparent);
+    padding-bottom: 1px;
+  }
+  .place .pin {
+    @apply size-4;
+    transform-origin: 50% 100%;
+    transition: transform 0.35s var(--ease-soft);
+  }
+  .place > summary:hover .pin {
+    transform: translateY(-2px) rotate(-8deg);
+  }
+  .place .chev {
+    @apply size-3 opacity-60;
+    transition: transform 0.35s var(--ease-soft);
+  }
+  .place[open] .chev {
+    transform: rotate(180deg);
+  }
+  .place-card {
+    position: absolute;
+    top: calc(100% + 0.75rem);
+    left: 0;
+    z-index: 10;
+    min-width: 15.5rem;
+    padding: 1.1rem 1.25rem 1.25rem;
+    border: 1px solid var(--color-line);
+    border-radius: 1rem;
+    background: color-mix(in oklab, var(--color-paper) 96%, transparent);
+    backdrop-filter: blur(14px) saturate(1.2);
+    box-shadow:
+      0 1px 2px color-mix(in oklab, var(--color-ink) 6%, transparent),
+      0 18px 40px -18px color-mix(in oklab, var(--color-ink) 28%, transparent);
+    animation: pop 0.4s var(--ease-soft) both;
+  }
+  .place-card ol {
+    position: relative;
+    margin-left: 0.35rem;
+    padding-left: 1.15rem;
+    border-left: 1px solid var(--color-line);
+    @apply space-y-2.5 font-serif text-[1.05rem] text-mute;
+  }
+  .place-card li {
+    position: relative;
+    animation: pop 0.45s var(--ease-soft) both;
+    animation-delay: calc(var(--i, 0) * 45ms);
+  }
+  .place-card li::before {
+    content: '';
+    position: absolute;
+    left: calc(-1.15rem - 3.5px);
+    top: 0.62em;
+    width: 6px;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--color-faint);
+  }
+  .place-card li.now {
+    color: var(--color-ink);
+  }
+  .place-card li.now::before {
+    background: var(--color-glow);
+    box-shadow: 0 0 0 3px color-mix(in oklab, var(--color-glow) 25%, transparent);
+  }
+  .place-card li.now span {
+    @apply ml-2 font-sans text-[0.68rem] font-medium uppercase tracking-[0.14em] text-faint;
+  }
+  .place-card li:nth-child(1) { --i: 1; }
+  .place-card li:nth-child(2) { --i: 2; }
+  .place-card li:nth-child(3) { --i: 3; }
+  .place-card li:nth-child(4) { --i: 4; }
+  .place-card li:nth-child(5) { --i: 5; }
+  @keyframes pop {
+    from {
+      opacity: 0;
+      transform: translateY(-6px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
   .pulse {
     @apply relative inline-block size-1.5 rounded-full bg-glow;
     box-shadow: 0 0 0 0 color-mix(in oklab, var(--color-glow) 60%, transparent);
@@ -175,10 +277,13 @@
 @media (prefers-reduced-motion: reduce) {
   .rise,
   .aura,
-  .pulse {
+  .pulse,
+  .place-card,
+  .place-card li {
     animation: none;
   }
-  .rise {
+  .rise,
+  .place-card li {
     opacity: 1;
     transform: none;
     filter: none;
