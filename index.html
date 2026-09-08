@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spencer Schoeben</title>
+    <meta
+      name="description"
+      content="Founding and staff software engineer at Delphi. Previously Capital, Untapped, Magma, and Integral."
+    />
+    <link rel="canonical" href="https://netspencer.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://netspencer.com/" />
+    <meta property="og:title" content="Spencer Schoeben" />
+    <meta property="og:site_name" content="Spencer Schoeben" />
+    <meta
+      property="og:description"
+      content="Founding and staff software engineer at Delphi. Previously Capital, Untapped, Magma, and Integral."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@netspencer" />
+    <meta name="twitter:creator" content="@netspencer" />
+    <meta name="theme-color" content="#0c0c0b" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex min-h-dvh flex-col">
+      <header class="flex items-center justify-between px-8 py-8 md:px-14 md:py-10">
+        <a
+          href="/"
+          class="text-[15px] font-medium tracking-[0.14em] text-ink/70 transition-opacity hover:opacity-70"
+        >
+          netspencer
+        </a>
+        <a
+          href="https://github.com/netspencer"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="opacity-80 transition-opacity hover:opacity-100"
+        >
+          <img
+            src="/static/github-white.png"
+            alt="GitHub"
+            width="24"
+            height="24"
+            class="h-5 w-5"
+          />
+        </a>
+      </header>
+
+      <main class="flex flex-1 flex-col px-8 pb-28 md:px-14">
+        <div class="max-w-md pt-6 md:pt-10">
+          <h1 class="font-serif text-[2.35rem] leading-tight tracking-[-0.02em] text-ink md:text-[2.75rem]">
+            Spencer Schoeben
+          </h1>
+          <div class="mt-10 space-y-6 font-serif text-[1.2rem] leading-[1.7] text-mute md:text-[1.28rem]">
+            <p>
+              Founding and staff software engineer at
+              <a class="prose-link" href="https://delphi.ai" target="_blank" rel="noopener noreferrer">Delphi</a>.
+            </p>
+            <p>
+              Previously
+              <a class="prose-link" href="https://capital.xyz" target="_blank" rel="noopener noreferrer">Capital</a>,
+              <a class="prose-link" href="https://untapped.io" target="_blank" rel="noopener noreferrer">Untapped</a>,
+              <a class="prose-link" href="https://magmanow.com" target="_blank" rel="noopener noreferrer">Magma</a>,
+              and
+              <a class="prose-link" href="https://integral.studio" target="_blank" rel="noopener noreferrer">Integral</a>.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      window.delphi = {
+        config: '8bbf71fd-d47b-4705-a44f-28773432b8e2',
+        type: 'bubble',
+      }
+    </script>
+    <script>
+      !(function () {
+        var e = window,
+          t = document,
+          n = function () {
+            if (
+              !e.delphi ||
+              ('page' !== e.delphi.type && 'bubble' !== e.delphi.type)
+            )
+              throw new Error(
+                "Invalid or missing delphi type. Must be 'page' or 'bubble'."
+              )
+            var n = t.createElement('script')
+            ;(n.type = 'text/javascript'),
+              (n.async = !0),
+              (n.defer = !0),
+              (n.src =
+                'page' === e.delphi.type
+                  ? 'https://embed.delphi.ai/bundle.js'
+                  : 'https://embed.delphi.ai/widget.js'),
+              e.delphi &&
+                e.delphi.config &&
+                n.setAttribute('data-config', e.delphi.config)
+            var i = t.getElementsByTagName('script')[0]
+            i.parentNode.insertBefore(n, i)
+          }
+        'complete' === t.readyState
+          ? n()
+          : e.attachEvent
+            ? e.attachEvent('onload', n)
+            : e.addEventListener('load', n, !1)
+      })()
+    </script>
+  </body>
+</html>
